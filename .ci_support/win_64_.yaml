@@ -1,17 +1,15 @@
 build_variant:
-- qt6
+- qt5
 c_stdlib:
 - vs
 channel_sources:
-- conda-forge
+- realthunder,conda-forge,defaults
 channel_targets:
-- conda-forge main
+- realthunder main
 cxx_compiler:
-- vs2019
+- vs2022
 qt:
 - '5.15'
-qt6_main:
-- '6.7'
 qt_main:
 - '5.15'
 target_platform:

@@ -1,17 +1,13 @@
-About soqt6-feedstock
-=====================
+About soqt-rt-feedstock
+=======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/soqt-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/realthunder/soqt-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/coin3d/soqt
+Home: https://github.com/realthunder/coin
 
 Package license: BSD-3-Clause
 
-Summary: SoQt library needed by Coin3d.
-
-Development: https://github.com/coin3d/soqt
-
-Documentation: https://github.com/coin3d/soqt
+Summary: SoQt library for Coin3D with enhanced shadow rendering.
 
 SoQt is a Qt GUI component toolkit library for Coin. It is also compatible with SGI and TGS Open Inventor, and the API is based on the API of the InventorXt GUI component toolkit.
 
@@ -21,94 +17,6 @@ Current build status
 
 
 <table>
-    
-  <tr>
-    <td>Azure</td>
-    <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5395&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soqt-feedstock?branchName=main">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_64_build_variantqt5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soqt-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_build_variantqt5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_build_variantqt6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soqt-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_build_variantqt6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_build_variantqt5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soqt-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_build_variantqt5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_build_variantqt6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soqt-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_build_variantqt6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_build_variantqt5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soqt-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_build_variantqt5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_build_variantqt6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soqt-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_build_variantqt6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_build_variantqt5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soqt-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_build_variantqt5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_build_variantqt6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soqt-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_build_variantqt6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_build_variantqt5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soqt-feedstock?branchName=main&jobName=win&configuration=win%20win_64_build_variantqt5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_build_variantqt6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soqt-feedstock?branchName=main&jobName=win&configuration=win%20win_64_build_variantqt6" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
-    </td>
-  </tr>
 </table>
 
 Current release info
@@ -116,111 +24,71 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-soqt-green.svg)](https://anaconda.org/conda-forge/soqt) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/soqt.svg)](https://anaconda.org/conda-forge/soqt) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/soqt.svg)](https://anaconda.org/conda-forge/soqt) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/soqt.svg)](https://anaconda.org/conda-forge/soqt) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-soqt6-green.svg)](https://anaconda.org/conda-forge/soqt6) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/soqt6.svg)](https://anaconda.org/conda-forge/soqt6) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/soqt6.svg)](https://anaconda.org/conda-forge/soqt6) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/soqt6.svg)](https://anaconda.org/conda-forge/soqt6) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-soqt--rt-green.svg)](https://anaconda.org/realthunder/soqt-rt) | [![Conda Downloads](https://img.shields.io/conda/dn/realthunder/soqt-rt.svg)](https://anaconda.org/realthunder/soqt-rt) | [![Conda Version](https://img.shields.io/conda/vn/realthunder/soqt-rt.svg)](https://anaconda.org/realthunder/soqt-rt) | [![Conda Platforms](https://img.shields.io/conda/pn/realthunder/soqt-rt.svg)](https://anaconda.org/realthunder/soqt-rt) |
 
-Installing soqt6
-================
+Installing soqt-rt
+==================
 
-Installing `soqt6` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `soqt-rt` from the `realthunder` channel can be achieved by adding `realthunder` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels realthunder
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `soqt, soqt6` can be installed with `conda`:
+Once the `realthunder` channel has been enabled, `soqt-rt` can be installed with `conda`:
 
 ```
-conda install soqt soqt6
-```
-
-or with `mamba`:
-
-```
-mamba install soqt soqt6
-```
-
-It is possible to list all of the versions of `soqt` available on your platform with `conda`:
-
-```
-conda search soqt --channel conda-forge
+conda install soqt-rt
 ```
 
 or with `mamba`:
 
 ```
-mamba search soqt --channel conda-forge
+mamba install soqt-rt
+```
+
+It is possible to list all of the versions of `soqt-rt` available on your platform with `conda`:
+
+```
+conda search soqt-rt --channel realthunder
+```
+
+or with `mamba`:
+
+```
+mamba search soqt-rt --channel realthunder
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search soqt --channel conda-forge
+mamba repoquery search soqt-rt --channel realthunder
 
-# List packages depending on `soqt`:
-mamba repoquery whoneeds soqt --channel conda-forge
+# List packages depending on `soqt-rt`:
+mamba repoquery whoneeds soqt-rt --channel realthunder
 
-# List dependencies of `soqt`:
-mamba repoquery depends soqt --channel conda-forge
+# List dependencies of `soqt-rt`:
+mamba repoquery depends soqt-rt --channel realthunder
 ```
 
 
-About conda-forge
-=================
-
-[![Powered by
-NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
-
-conda-forge is a community-led conda channel of installable packages.
-In order to provide high-quality builds, the process has been automated into the
-conda-forge GitHub organization. The conda-forge organization contains one repository
-for each of the installable packages. Such a repository is known as a *feedstock*.
-
-A feedstock is made up of a conda recipe (the instructions on what and how to build
-the package) and the necessary configurations for automatic building using freely
-available continuous integration services. Thanks to the awesome service provided by
-[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
-[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
-it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
-channel for Linux, Windows and OSX respectively.
-
-To manage the continuous integration and simplify feedstock maintenance
-[conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
-Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
-this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
-
-For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
-
-Terminology
-===========
-
-**feedstock** - the conda recipe (raw material), supporting scripts and CI configuration.
-
-**conda-smithy** - the tool which helps orchestrate the feedstock.
-                   Its primary use is in the construction of the CI ``.yml`` files
-                   and simplify the management of *many* feedstocks.
-
-**conda-forge** - the place where the feedstock and smithy live and work to
-                  produce the finished article (built conda distributions)
 
 
-Updating soqt6-feedstock
-========================
+Updating soqt-rt-feedstock
+==========================
 
-If you would like to improve the soqt6 recipe or build a new
+If you would like to improve the soqt-rt recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
-`conda-forge` channel, whereupon the built conda packages will be available for
-everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/soqt6-feedstock are
+`realthunder` channel, whereupon the built conda packages will be available for
+everybody to install and use from the `realthunder` channel.
+Note that all branches in the realthunder/soqt-rt-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
@@ -233,5 +101,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@looooo](https://github.com/looooo/)
+* [@realthunder](https://github.com/realthunder/)
 
