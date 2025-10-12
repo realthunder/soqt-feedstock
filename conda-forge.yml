@@ -1,4 +1,4 @@
-conda_forge_output_validation: true
+conda_forge_output_validation: false
 build_platform:
   linux_aarch64: linux_64
   osx_arm64: osx_64

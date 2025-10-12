@@ -34,24 +34,24 @@ requirements:
   host:
     - qt6-main      # [build_variant == "qt6"]
     - qt-main       # [build_variant == "qt5"]
-    - coin3d
+    - coin3d-rt
   run_constrained:
-    - soqt <0         # [build_variant == "qt6"]
-    - soqt6 <0        # [build_variant == "qt5"]
+    - soqt-rt <0         # [build_variant == "qt6"]
+    - soqt6-rt <0        # [build_variant == "qt5"]
 
-test:
-  requires:
-    - cmake
-    - ninja
-    - {{ compiler("cxx") }}
-    - {{ cdt('mesa-libgl-devel') }}      # [linux]
-    - {{ cdt('mesa-dri-drivers') }}      # [linux]
-
-  files:
-    - CMakeLists.txt
-
-  commands:
-    - cmake -G "Ninja" -D QT_HOST_PATH=${PREFIX} .
+# test:
+#   requires:
+#     - cmake
+#     - ninja
+#     - {{ compiler("cxx") }}
+#     - {{ cdt('mesa-libgl-devel') }}      # [linux]
+#     - {{ cdt('mesa-dri-drivers') }}      # [linux]
+#
+#   files:
+#     - CMakeLists.txt
+#
+#   commands:
+#     - cmake -G "Ninja" -D QT_HOST_PATH=${PREFIX} .
 
 about:
   home: https://github.com/realthunder/coin

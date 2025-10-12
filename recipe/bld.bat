@@ -18,6 +18,7 @@ if "%QT_SELECTOR%"=="" (
 )
 
 cmake -G "Ninja" ^
+      -D CMAKE_POLICY_VERSION_MINIMUM="3.5" ^
       -D CMAKE_PREFIX_PATH:FILEPATH="%PREFIX%" ^
       -D CMAKE_INSTALL_PREFIX:FILEPATH="%LIBRARY_PREFIX%" ^
       -D CMAKE_BUILD_TYPE="Release" ^

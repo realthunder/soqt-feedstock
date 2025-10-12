@@ -33,6 +33,7 @@ CXXFLAGS="$CXXFLAGS -std=c++11"
 
 # Run CMake with specified options
 cmake -G "Ninja" \
+    -D CMAKE_POLICY_VERSION_MINIMUM="3.5" \
     -D CMAKE_INSTALL_PREFIX="$PREFIX" \
     -D CMAKE_PREFIX_PATH="$PREFIX" \
     -D CMAKE_BUILD_TYPE="Release" \
