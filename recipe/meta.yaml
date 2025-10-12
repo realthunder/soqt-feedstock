@@ -1,9 +1,9 @@
 {% set version = "1.6.3" %}
 
 {% if build_variant == "qt6" %}
-{% set name = "soqt6" %}
+{% set name = "soqt6-rt" %}
 {% else %}
-{% set name = "soqt" %}
+{% set name = "soqt-rt" %}
 {% endif %}
 
 package:
@@ -54,16 +54,14 @@ test:
     - cmake -G "Ninja" -D QT_HOST_PATH=${PREFIX} .
 
 about:
-  home: https://github.com/coin3d/soqt
+  home: https://github.com/realthunder/coin
   license: BSD-3-Clause
   license_family: BSD
   license_file: COPYING
-  summary: SoQt library needed by Coin3d.
+  summary: SoQt library for Coin3D with enhanced shadow rendering.
   description: >
     SoQt is a Qt GUI component toolkit library for Coin. It is also compatible with SGI and TGS Open Inventor, and the API is based on the API of the InventorXt GUI component toolkit.
-  doc_url: https://github.com/coin3d/soqt
-  dev_url: https://github.com/coin3d/soqt
 
 extra:
   recipe-maintainers:
-    - looooo
+    - realthunder
