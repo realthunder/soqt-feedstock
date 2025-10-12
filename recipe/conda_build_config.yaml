@@ -8,4 +8,4 @@ build_variant:
   - "qt5"
   # - "qt6"
 qt_main:
-  - '5.15'
+  - '5.15.8'

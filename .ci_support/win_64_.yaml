@@ -11,6 +11,6 @@ cxx_compiler:
 qt:
 - '5.15'
 qt_main:
-- '5.15'
+- 5.15.8
 target_platform:
 - win-64

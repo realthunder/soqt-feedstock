@@ -58,8 +58,6 @@ jobs:
         CI: github_actions
         CONDA_FORGE_DOCKER_RUN_ARGS: "${{ matrix.CONDA_FORGE_DOCKER_RUN_ARGS }}"
         BINSTAR_TOKEN: ${{ secrets.BINSTAR_TOKEN }}
-        FEEDSTOCK_TOKEN: ${{ secrets.FEEDSTOCK_TOKEN }}
-        STAGING_BINSTAR_TOKEN: ${{ secrets.STAGING_BINSTAR_TOKEN }}
       shell: bash
       run: |
         if [[ "$(uname -m)" == "x86_64" ]]; then
@@ -87,8 +85,6 @@ jobs:
         UPLOAD_PACKAGES: ${{ matrix.UPLOAD_PACKAGES }}
         CI: github_actions
         BINSTAR_TOKEN: ${{ secrets.BINSTAR_TOKEN }}
-        FEEDSTOCK_TOKEN: ${{ secrets.FEEDSTOCK_TOKEN }}
-        STAGING_BINSTAR_TOKEN: ${{ secrets.STAGING_BINSTAR_TOKEN }}
       shell: bash
       run: |
         export flow_run_id="github_$GITHUB_RUN_ID"
@@ -122,5 +118,3 @@ jobs:
         CI: github_actions
         UPLOAD_PACKAGES: ${{ matrix.UPLOAD_PACKAGES }}
         BINSTAR_TOKEN: ${{ secrets.BINSTAR_TOKEN }}
-        FEEDSTOCK_TOKEN: ${{ secrets.FEEDSTOCK_TOKEN }}
-        STAGING_BINSTAR_TOKEN: ${{ secrets.STAGING_BINSTAR_TOKEN }}

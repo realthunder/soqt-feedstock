@@ -19,6 +19,6 @@ docker_image:
 qt:
 - '5.15'
 qt_main:
-- '5.15'
+- 5.15.8
 target_platform:
 - linux-aarch64
