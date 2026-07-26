@@ -44,3 +44,16 @@ cmake -G "Ninja" \
 
 # Build and install using Ninja
 ninja install
+
+# Cross builds (linux-aarch64) leak the absolute host and build-env
+# include dirs into the exported target's INTERFACE_INCLUDE_DIRECTORIES
+# (soqt-export.cmake); the build-env path does not exist on consumer
+# machines, so any consumer's CMake hard-errors with "non-existent
+# path" (broke the pivy-rt aarch64 build). Keep only the relocatable
+# ${_IMPORT_PREFIX}/include entry.
+for f in "$PREFIX"/lib/cmake/SoQt-*/soqt-export.cmake; do
+    [ -f "$f" ] || continue
+    sed -i.bak -e 's|[^";]*/_build_env/include;||g' \
+               -e 's|[^";]*/_h_env[^";]*/include;||g' "$f"
+    rm -f "$f.bak"
+done
