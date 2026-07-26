@@ -34,11 +34,11 @@ jobs:
           - CONFIG: osx_64_
             UPLOAD_PACKAGES: True
             os: macos
-            runs_on: ['macos-13']
+            runs_on: ['macos-15-intel']
           - CONFIG: osx_arm64_
             UPLOAD_PACKAGES: True
             os: macos
-            runs_on: ['macos-13']
+            runs_on: ['macos-15-intel']
           - CONFIG: win_64_
             UPLOAD_PACKAGES: True
             os: windows
